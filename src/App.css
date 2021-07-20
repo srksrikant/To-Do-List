@@ -1,0 +1,113 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan-1: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --light-grayish-cyan-1: hsl(185, 41%, 84%);
+  --light-grayish-cyan-2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --hover: #61918a;
+  --hover-active: #9fe8df;
+  --error: crimson;
+  --disabled: #0d686d;
+}
+body{
+  background-color:  var(--light-grayish-cyan-1);
+}
+
+ul {
+  list-style: none;
+  width: 400px;
+}
+.App-header{
+  text-align: center;
+  min-height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.625rem + 2vmin);
+  color: white;
+  background-color: var(--very-dark-cyan);  
+  padding: 7px 0;
+  margin: 4% auto 0 auto;
+  width: 30rem;
+  border-radius: 1rem;
+}
+.wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  margin-top: 5%;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 57.5rem;
+  padding: 5% 2%;
+  border-radius: 1rem;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 400px;
+  
+}
+
+.form__input {
+  display: flex;
+  width: 100%;
+  /* border-bottom: 1px dashed gray; */
+  padding-bottom: 10px;
+  height: 67px;
+}
+
+.form__edit-input:focus {
+  outline: var(--strong-cyan) solid 2px !important;
+  border: none;
+  font-size: 20px;
+  width: 90%;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.input:focus{
+  outline: var(--strong-cyan) solid 2px !important;
+  border: none !important;
+}
+.button{
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--very-dark-cyan) !important;
+  font-size: 1.5rem;
+  width: 60%;  
+  height: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
+}
+.button:hover{
+  transition: none;
+  background-color: var(--hover-active) !important;
+  color:var(--very-dark-cyan) !important;
+}
+.MuiTypography-body2 {
+  font-family:"Righteous", cursive !important;
+}
+.MuiFormLabel-root{
+  font-family:"Righteous", cursive !important;
+}
