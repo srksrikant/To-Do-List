@@ -11,15 +11,15 @@
   --error: crimson;
   --disabled: #0d686d;
 }
-body{
-  background-color:  var(--light-grayish-cyan-1);
+body {
+  background-color: var(--light-grayish-cyan-1);
 }
 
 ul {
   list-style: none;
   width: 400px;
 }
-.App-header{
+.App-header {
   text-align: center;
   min-height: min-content;
   display: flex;
@@ -28,7 +28,7 @@ ul {
   justify-content: center;
   font-size: calc(0.625rem + 2vmin);
   color: white;
-  background-color: var(--very-dark-cyan);  
+  background-color: var(--very-dark-cyan);
   padding: 7px 0;
   margin: 4% auto 0 auto;
   width: 30rem;
@@ -39,7 +39,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:auto;
+  margin: auto;
   margin-top: 5%;
   flex-direction: column;
   background-color: var(--white);
@@ -53,7 +53,6 @@ h1 {
 
 .form {
   width: 30rem;
-  
 }
 
 .form__input {
@@ -81,16 +80,16 @@ h1 {
   position: absolute;
   width: 1px;
 }
-.input:focus{
+.input:focus {
   outline: var(--strong-cyan) solid 2px !important;
   border: none !important;
 }
-.button{
+.button {
   border: none;
   border-radius: 0.25rem;
   background-color: var(--very-dark-cyan) !important;
   font-size: 1.5rem;
-  width: 60%;  
+  width: 60%;
   height: 3rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -99,45 +98,44 @@ h1 {
   transition: background-color 0.2s ease-in-out;
   user-select: none;
 }
-.button:hover{
+.button:hover {
   transition: none;
   background-color: var(--hover-active) !important;
-  color:var(--very-dark-cyan) !important;
+  color: var(--very-dark-cyan) !important;
   font-weight: bold;
 }
 .MuiTypography-body2 {
-  font-family:"Righteous", cursive !important;
+  font-family: "Righteous", cursive !important;
 }
-.MuiFormLabel-root{
-  font-family:"Righteous", cursive !important;
+.MuiFormLabel-root {
+  font-family: "Righteous", cursive !important;
 }
-@media screen and (max-width: 780px){
-  .wrapper{
+@media screen and (max-width: 780px) {
+  .wrapper {
     width: 80%;
     display: flex;
     flex-direction: column;
   }
-  .App-header{
+  .App-header {
     width: 80%;
     display: flex;
     flex-direction: column;
   }
   .form {
     width: auto;
-    
   }
-  .button{
+  .button {
     width: 2rem;
     border: none;
-  border-radius: 0.25rem;
-  background-color: var(--very-dark-cyan) !important;
-  font-size: .7rem !important;
-  height: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff !important;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  user-select: none;
+    border-radius: 0.25rem;
+    background-color: var(--very-dark-cyan) !important;
+    font-size: 0.7rem !important;
+    height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    user-select: none;
   }
 }
