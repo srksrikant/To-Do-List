@@ -30,7 +30,7 @@ ul {
   color: white;
   background-color: var(--very-dark-cyan);
   padding: 7px 0;
-  margin: 4% auto 0 auto;
+  margin: 3% auto 0 auto;
   width: 30rem;
   border-radius: 1rem;
 }
@@ -40,11 +40,10 @@ ul {
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 5%;
-  flex-direction: column;
+  margin-top: 3%;
   background-color: var(--white);
-  width: 50rem;
-  padding: 5% 2%;
+  width: 45rem;
+  padding: 3% 1% 2% 1%;
   border-radius: 1rem;
 }
 h1 {
@@ -52,7 +51,7 @@ h1 {
 }
 
 .form {
-  width: 30rem;
+  width: 35rem;
 }
 
 .form__input {
@@ -88,10 +87,10 @@ h1 {
   border: none;
   border-radius: 0.25rem;
   background-color: var(--very-dark-cyan) !important;
-  font-size: 1.5rem;
+  font-size: 1rem !important;
   width: 60%;
   height: 3rem;
-  font-weight: bold;
+  font-weight: 1000;
   text-transform: uppercase;
   color: #fff !important;
   cursor: pointer;
@@ -100,8 +99,8 @@ h1 {
 }
 .button:hover {
   transition: none;
-  background-color: var(--hover-active) !important;
-  color: var(--very-dark-cyan) !important;
+  background-color: var(--hover) !important;
+  color: #FFF !important;
   font-weight: bold;
 }
 .MuiTypography-body2 {
