@@ -14,17 +14,15 @@ const useStyles = makeStyles(() => ({
   root: {
     margin: "7% 0",
     width: "100%",
-    backgroundColor: "#f5f5f5",
-  },
-  li: {
-    // borderBottom: '1px dashed black'
+    backgroundColor: "hsl(183, 100%, 15%)",
+    borderRadius:"10px",
+    color:"#FFF"
   },
 }));
 const TodoList = ({
   theme,
   todos,
   completeTodo,
-  editTodo,
   deleteTodo,
   saveTodo,
   noteRef,
@@ -108,6 +106,7 @@ const TodoList = ({
               )}
               <ListItemSecondaryAction>
                 <IconButton
+                color="primary"
                   onClick={() => deleteTodo(inx)}
                   edge="end"
                   aria-label="delete"
