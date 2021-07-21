@@ -65,7 +65,7 @@ const TodoCreator = ({
           // className={classes.root}
           onKeyPress={preventSubmit}
         >
-          Add task
+         <b> Add task</b>
         </Button>
       </ThemeProvider>
     </div>
