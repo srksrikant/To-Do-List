@@ -43,17 +43,16 @@ ul {
   margin-top: 5%;
   flex-direction: column;
   background-color: var(--white);
-  width: 57.5rem;
+  width: 50rem;
   padding: 5% 2%;
   border-radius: 1rem;
 }
-
 h1 {
   margin-bottom: 20px;
 }
 
 .form {
-  width: 400px;
+  width: 30rem;
   
 }
 
@@ -104,10 +103,41 @@ h1 {
   transition: none;
   background-color: var(--hover-active) !important;
   color:var(--very-dark-cyan) !important;
+  font-weight: bold;
 }
 .MuiTypography-body2 {
   font-family:"Righteous", cursive !important;
 }
 .MuiFormLabel-root{
   font-family:"Righteous", cursive !important;
+}
+@media screen and (max-width: 780px){
+  .wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .App-header{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form {
+    width: auto;
+    
+  }
+  .button{
+    width: 2rem;
+    border: none;
+  border-radius: 0.25rem;
+  background-color: var(--very-dark-cyan) !important;
+  font-size: .7rem !important;
+  height: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
+  }
 }

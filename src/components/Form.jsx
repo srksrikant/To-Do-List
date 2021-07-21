@@ -6,7 +6,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
     palette: {
-        primary: { main: '#000000' },
+        primary: { main: 'hsl(183, 100%, 15%)' },
     },
 });
 
@@ -15,19 +15,16 @@ const Form = () => {
     const [ newTodo, setNewTodo ] = useState('');
     const [ todos, setTodos ] = useState([
         {
-            text: "Learn about React",
+            text: "Compleate the To Do Leat",
             isCompleted: false,
-            isEditing: false
         },
         {
-            text: "Meet friend for lunch",
+            text: "Learn Java Script",
             isCompleted: false,
-            isEditing: false
         },
         {
-            text: "Build really cool todo app",
+            text: "Learn React Hoooks",
             isCompleted: false,
-            isEditing: false
         }
     ]);
     const inputRef = useRef();
@@ -70,13 +67,6 @@ const Form = () => {
         newTodos[inx].isCompleted = !newTodos[inx].isCompleted;
         setTodos(newTodos);
     };
-
-    const editTodo = inx => {
-        const newTodos = [...todos];
-        newTodos[inx].isEditing = !newTodos[inx].isEditing;
-        setTodos(newTodos);
-    }
-
     const saveTodo = (inx) => {
         const newTodos = [...todos];
         newTodos[inx].isEditing = !newTodos[inx].isEditing;
@@ -114,7 +104,6 @@ const Form = () => {
                     theme={theme}
                     todos={todos}
                     completeTodo={completeTodo}
-                    editTodo={editTodo}
                     deleteTodo={removeTodo}
                     saveTodo={saveTodo}
                     noteRef={noteRef}

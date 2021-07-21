@@ -7,7 +7,6 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
-import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 
@@ -22,7 +21,6 @@ const useStyles = makeStyles(() => ({
         // borderBottom: '1px dashed black'
     }
 }));
-
 const TodoList = ({ theme, todos, completeTodo, editTodo, deleteTodo, saveTodo, noteRef, preventSubmit }) => {
     const classes = useStyles();
     const [checked, setChecked] = React.useState([0]);
@@ -76,17 +74,9 @@ const TodoList = ({ theme, todos, completeTodo, editTodo, deleteTodo, saveTodo, 
                                     <ListItemText
                                         id={labelId}
                                         primary={`${todo.text}`}
-                                        style={{textDecoration: todo.isCompleted ? "line-through" : ""}}
+                                        style={{textDecoration: todo.isCompleted ? "line-through" : "", textDecorationColor: todo.isCompleted ? "hsl(183, 100%, 15%)" : "" }}
+                                       
                                     />
-                                    <ListItemIcon>
-                                        <IconButton
-                                            edge="end"
-                                            aria-label="edit"
-                                            onClick={() => editTodo(inx)}
-                                        >
-                                            <EditIcon/>
-                                        </IconButton>
-                                    </ListItemIcon>
                                 </>
                                 :
                                 <>
@@ -96,13 +86,6 @@ const TodoList = ({ theme, todos, completeTodo, editTodo, deleteTodo, saveTodo, 
                                     >
                                         {todo.text}
                                     </label>
-                                    <input
-                                        className="form__edit-input"
-                                        defaultValue={todo.text}
-                                        ref={(element) => noteRef.current[inx] = element}
-                                        onKeyPress={preventSubmit}
-                                        id="task"
-                                    />
                                     <ListItemIcon>
                                         <IconButton onClick={() => saveTodo(inx)} edge="end" aria-label="delete">
                                             <BookmarkIcon />
